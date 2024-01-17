@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>Classes vs ID's</title>
     <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Content-Security-Policy" content="default-src 'self'">
+    <meta name="description" content="Lewis Steentjes's Personal Blog">
+    <meta name="author" content="Lewis Steentjes">
+    <link rel="stylesheet" href="/styles/main.css">
   </head>
   
   <body>
     <div id="navigation-bar">
-      <a href="/index.html">Home</a> | 
-      <a href="/blog/te-houtaewa-template.html">Te Houetaewa</a> | 
-      <!--a href="https://www.lewissteentjes.com/">Old Blog</a-->
-      <a href="/blog/classes-vs-ids.html">Classes vs IDs</a>
+      <div id="navigation-bar">
+        <a href="/index.html">Home</a> | 
+        <a>Empty Link</a> | 
+        <a>Other Empty Link</a>
+      </div>
     </div>
     <div class="main-column">
-      <h3 class="blog-title">What are the best practices associated with using Classes vs ID's?</h3>
-      <p>Classes are used in CSS to define the behaviour of a specified element (or multiple elements). They can be reused over and over again to simplify your HTML code.
-        </p>
+      <h2 class="blog-title">Classes vs ID's</h2>
+      <h3>First of all, what are Classes/ID's?</h3>
+      <p>
+        Classes and ID's are two awesome features of CSS. Instead of having to manually style each and every HTML element,
+        classes allow us to abstract out the styling of a feature and reuse it throughout the project. ID's on the other hand,
+        also allow us to abstract out the styling of a feature in a project. Generally, best practice is to use classes for elements
+        that will appear multiple times throughout a webpage and ID's should be used only for one element. Some key reasons for that 
+        are as follows: 
+      </p>
+      <ol>
+        <li>ID's can be adjusted via JavaScript</li>
+        <li>ID's have a higher priority in the DOM than classes.</li>
+      </ol>
+      <h3>Why do these matter?</h3>
+      <p>If we choose to add JavaScript functionality to our element, having it appear multiple times throughout a webpage cause issues
+        with the functionality of it and just causes unnecessary headache.</p>
+      <p>Since ID's have a higher priority than classes, it is better to use classes for the general case. When wanting to control a 
+        specific element, we can then use ID's to override any pre-set conditions from the class.</p>
+      <h3>How to Implement a class in CSS</h3>
+      <p>So, with that out of the way, how do we implement our class in CSS?</p>
+      <p>First, we add a class entry into the CSS file, with the associated element properties that we want.
+        We signify that it's a class by prepending the entry with a '.' symbol.  </p>
+      <img src="/blog/images/pup10.jpg">
+
         <p>ID's are used in CSS to define the behaviour of a specific, individual element. They can also be used with Javascript. Like classes, you are <b>able</b> to 
         use them for multiple different elements across a webpage. However, best practice is to only use IDs for things that appear once on the webpage.</p>
         <p>ID's also have a higher priority in the CSS heirarchy. This means that for elements which use both a class and an ID, they will appear as intended when the ID is being used for the specific element.</p>
+        <a class="return-link" href="/index.html">Return to Home</a>
+
     </div>
   </body>
 
