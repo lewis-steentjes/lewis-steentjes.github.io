@@ -26,6 +26,12 @@ hr.solid {
     background-color: pink;
     font-size: 1.5rem;
 }
+a:link {
+    color:red;
+}
+a:visited {
+    color: red;
+}
 .main-column {
     background-color: pink;
     color: black;
