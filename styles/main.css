@@ -1,3 +1,76 @@
-h1 {
-    color: green;
+body {
+    background-color: darkslategrey;
+    color: gainsboro;
 }
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+hr.solid {
+    border-top: 3px solid #bbb;    
+}
+#landing {
+    border-color: green;
+    background-color: olive;
+    border: 5px solid black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 10vw;
+    font-size: 2rem;
+}
+#navigation-bar {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-color: pink;
+    font-size: 1.5rem;
+}
+.main-column {
+    background-color: darkolivegreen;
+    padding: 20px;
+    
+    margin: 20px 20vw 10px 20vw;
+}
+@media (max-width: 850px) {
+    .main-column {
+        width: 90%;
+        margin: 20px 0vw 10px 0vw;
+        background-color: royalblue;
+    }
+}
+
+
+.welcome-message {
+
+}
+.entry-post {
+
+}
+.fancy-text {
+    color: red;
+    background-color: blueviolet;
+}
+.blog-pic {
+    
+    width: 100%;
+    height: auto;
+    
+}
+.table-container {
+    margin: auto;
+    background: violet;
+}
+th, td {
+    border: 1px solid black;
+    width: 33%;
+}
+
+.xy-gene-table {
+    margin: auto;
+    width: 80%;
+    text-align:center;
+    background:purple;
+    border: 2px solid black;
+}
+
