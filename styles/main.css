@@ -29,7 +29,8 @@ hr.solid {
 .main-column {
     background-color: darkolivegreen;
     padding: 20px;
-    
+    border-radius: 10px;
+        
     margin: 20px 20vw 10px 20vw;
 }
 @media (max-width: 850px) {
@@ -74,3 +75,39 @@ th, td {
     border: 2px solid black;
 }
 
+
+.gallery {
+    background-color: mediumseagreen;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping onto new lines */
+    align-items: center; /* Align items at the start */
+    justify-content: space-evenly; /* Align items from the start horizontally */
+
+    overflow: hidden; /* Hide overflow */
+    gap: 10px; /* Space between items */
+    padding: 5px; /* Padding around the container */
+    border: 1px solid #ccc; /* Optional border for the container */
+}
+
+/* Flexbox Items (Images) */
+.gallery img {
+    background-color: honeydew;
+    flex: 1 1 calc(16.66% - 10px); /* Adjust flex-basis for 6 images per row */
+    max-width: calc(16.66% - 10px); /* Maximum width for each image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 800px) {
+    .gallery img {
+        flex-basis: calc(33.33% - 10px); /* 3 images per row on smaller screens */
+        max-width: calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery img {
+        flex-basis: calc(50% - 10px); /* 2 images per row on very small screens */
+        max-width: calc(50% - 10px);
+    }
+}
