@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategrey;
+    background-color: peachpuff;
     color: gainsboro;
 }
 hr.rounded {
@@ -9,14 +9,14 @@ hr.rounded {
 hr.solid {
     border-top: 3px solid #bbb;    
 }
-#landing {
-    border-color: green;
-    background-color: olive;
+#banner {
+    border-color: blueviolet;
+    background-color: blueviolet;
     border: 5px solid black;
     color: aliceblue;
     text-align: center;
     padding: 10px;
-    margin: 10vw;
+    margin: 10px 10vw 10px 10vw;
     font-size: 2rem;
 }
 #navigation-bar {
@@ -27,7 +27,8 @@ hr.solid {
     font-size: 1.5rem;
 }
 .main-column {
-    background-color: darkolivegreen;
+    background-color: pink;
+    color: black;
     padding: 20px;
     border-radius: 10px;
         
@@ -43,7 +44,6 @@ hr.solid {
 .blog-title {
 
 }
-
 .welcome-message {
 
 }
