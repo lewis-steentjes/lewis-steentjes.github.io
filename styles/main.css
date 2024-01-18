@@ -25,6 +25,8 @@ hr.solid {
     text-align: center;
     background-color: pink;
     font-size: 1.5rem;
+    margin-bottom: 5px;
+    
 }
 a:link {
     color:red;
@@ -38,16 +40,15 @@ a:hover {
 .main-column {
     background-color: pink;
     color: black;
-    padding: 5px 20px 16px 20px;
+    padding: 5px 20px 5px 20px;
     border-radius: 10px;
         
     margin: 20px 20vw 10px 20vw;
 }
 @media (max-width: 850px) {
-    .main-column {
-        width: 90%;
+    .main-column {        
+        justify-content: center;
         margin: 1px 1vw 1px 1vw;
-        background-color: royalblue;
     }
 }
 .blog-title {
