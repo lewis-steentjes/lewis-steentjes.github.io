@@ -69,15 +69,19 @@ a:hover {
     background-color: blueviolet;
 }
 .blog-pic {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .blog-img {
-    max-width: 100%;
+    max-width: 30%;
+    border-radius: 5px;
     height: auto;
-    
+    justify-content: center;
 }
-.table-container {
+#blog-special-img {
+    border-radius:50%
+}
+.table-container {›‹
     margin: auto;
     background: violet;
 }
@@ -136,4 +140,12 @@ th, td {
         flex-basis: calc(50% - 10px); /* 2 images per row on very small screens */
         max-width: calc(50% - 10px);
     }
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: left;
 }

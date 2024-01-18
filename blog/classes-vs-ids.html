@@ -37,18 +37,34 @@
         with the functionality of it and just causes unnecessary headache.</p>
       <p>Since ID's have a higher priority than classes, it is better to use classes for the general case. When wanting to control a 
         specific element, we can then use ID's to override any pre-set conditions from the class.</p>
-      <h3>How to Implement a class in CSS</h3>
+      <h3>How to Implement a classes and ID's together in CSS</h3>
       <p>So, with that out of the way, how do we implement our class in CSS?</p>
       <p>First, we add a class entry into the CSS file, with the associated element properties that we want.
-        We signify that it's a class by prepending the entry with a '.' symbol.  </p>
-      <img src="/blog/images/pup10.jpg">
-
-        <p>ID's are used in CSS to define the behaviour of a specific, individual element. They can also be used with Javascript. Like classes, you are <b>able</b> to 
-        use them for multiple different elements across a webpage. However, best practice is to only use IDs for things that appear once on the webpage.</p>
-        <p>ID's also have a higher priority in the CSS heirarchy. This means that for elements which use both a class and an ID, they will appear as intended when the ID is being used for the specific element.</p>
-        <a class="return-link" href="/index.html">Return to Home</a>
+        We signify that it's a class by prepending the entry with a '.' symbol. After that, we simply assign
+       the class to the element via its class property inside .html file, as shown below.</p>
+      <img src="/blog/images/classes-vs-ids01.png" class="blog-pic">
+      <img src="/blog/images/classes-vs-ids02.png" class="blog-pic">
+      <p>Here, we can see how our image will appear after being given the class assignment.</p>
+      
+      <img src="/blog/images/pup10.jpg" class="blog-img">
+      <p> Now, let's say we want to show three images, with similar properties but we want one to stand out.
+        We can achieve this, by using the heightened priority property of ID's. To create an ID, it's the same
+        as creating a class, however we prepend the name of it with a '#' symbol instead of a '.' symbol and 
+        we call assign the id in the element's id property rather than the class property, as shown below.</p>
+      
+      <img src="/blog/images/classes-vs-ids03.png" class="blog-pic">
+      <img src="/blog/images/classes-vs-ids04.png" class="blog-pic">
+      
+      <p>Now, let's see it in action when used below: </p>
+      <div class="flex-row">
+        <img src="/blog/images/pup10.jpg" class="blog-img">
+        <img src="/blog/images/pup11.jpg" class="blog-img" id="blog-special-img">
+        <img src="/blog/images/pup12.jpg" class="blog-img">
+      </div>
+      <p>You can see, by using ID's for specific objects, and classes for general elements we are able to easily
+        manipulate a single object.</p>
+      <p><a class="return-link" href="/index.html">Return to Home</a></p>
 
     </div>
   </body>
-
 </html>
