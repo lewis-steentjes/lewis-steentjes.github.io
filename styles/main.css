@@ -140,3 +140,53 @@ th, td {
     justify-content: space-between;
     align-content: left;
 }
+@font-face {
+    font-family: 'code-filename';
+    src: url("/fonts/monaspace/MonaspaceKrypton-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'code-classname';
+    src: url("/fonts/monaspace/MonaspaceNeon-Regular.woff") format('woff');
+}
+div.code-segment {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    padding: 1px 5px 5px 0px;
+    margin: 5px 0px 5px 0px;
+}
+p.code-segment {
+    color: gainsboro;
+    font-family: 'code-classname';
+}
+.code-file {
+    font-family: 'code-filename', monospace;
+    color: #00ff41;
+}
+.code-class {
+    font-family: 'code-classname';
+    color: gold;
+}
+.code-var {
+    font-family: 'code-classname';
+    color: lightskyblue;
+}
+.code-value {
+    font-family: 'code-classname';
+    color: lightgreen;
+}
+.code-word {
+    font-family: 'code-classname';
+    color: lightcoral;
+}
+.code-string {
+    font-family: 'code-classname';
+    color: #cf9178;
+}
+.code-type {
+    font-family: 'code-classname';
+    color: royalblue;
+}
+.code-para {
+    font-family: 'code-classname';
+    color: gray;
+}

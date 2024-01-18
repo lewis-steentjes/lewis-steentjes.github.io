@@ -42,8 +42,23 @@
       <p>First, we add a class entry into the CSS file, with the associated element properties that we want.
         We signify that it's a class by prepending the entry with a '.' symbol. After that, we simply assign
        the class to the element via its class property inside .html file, as shown below.</p>
-      <img src="/blog/images/classes-vs-ids01.png" class="blog-pic">
-      <img src="/blog/images/classes-vs-ids02.png" class="blog-pic">
+      <div class="code-segment">
+        <p class="code-segment">
+          <span class="code-file">main.css</span> <br> <br>
+          <span class="code-class">.blog-img {</span><br>
+          &nbsp&nbsp&nbsp&nbsp<span class="code-var">max-width</span>: <span class="code-value">30%</span>;<br>
+          &nbsp&nbsp&nbsp&nbsp<span class="code-var">border-radius</span>: <span class="code-value">5px</span>; <br>
+          &nbsp&nbsp&nbsp&nbsp<span class="code-var">height</span>: <span class="code-word">auto</span>; <br>
+          &nbsp&nbsp&nbsp&nbsp<span class="code-var">justify-content</span>: <span class="code-word">center</span>; <br>
+          <span class="code-class">}</span>
+        </p>
+      </div>
+      <div class="code-segment">
+        <p class="code-segment">
+          <span class="code-file">classes-vs-ids.html</span> <br> <br>
+          <span class="code-para">&lt;</span><span class="code-type">img</span> <span class="code-var">src</span>=<span class="code-string">"/blog/images/pup10.jpg"</span> <span class="code-var">class</span>=<span class="code-string">"blog-img"</span><span class="code-para">&gt;</span>
+        </p>
+      </div>
       <p>Here, we can see how our image will appear after being given the class assignment.</p>
       
       <img src="/blog/images/pup10.jpg" class="blog-img">
