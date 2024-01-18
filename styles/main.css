@@ -29,10 +29,10 @@ hr.solid {
     
 }
 a:link {
-    color:red;
+    color:purple;
 }
 a:visited {
-    color: rgb(176, 9, 9);
+    color: gray;
 }
 a:hover {
     color: gray;
