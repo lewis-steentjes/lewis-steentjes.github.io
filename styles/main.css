@@ -51,19 +51,10 @@ a:hover {
         margin: 1px 1vw 1px 1vw;
     }
 }
-.blog-title {
-
-}
 .blog-date {
     padding-top: 0px;
     margin-top: 0px;
     font-size: 0.8rem;
-}
-.welcome-message {
-
-}
-.entry-post {
-
 }
 .fancy-text {
     color: red;
@@ -102,7 +93,6 @@ th, td {
 .return-link {
     color: purple;
 }
-
 
 .gallery {
     background-color: rgb(153, 216, 181);
