@@ -1,5 +1,5 @@
 body {
-    background-color: peachpuff;
+    background-color: #fae588;
     color: rgb(0, 0, 0);
 }
 hr.rounded {
@@ -11,9 +11,9 @@ hr.solid {
 }
 #banner {
     border-color: blueviolet;
-    background-color: blueviolet;
+    background-color: #710000;
     border: 5px solid black;
-    color: aliceblue;
+    color: #fffae5;
     text-align: center;
     padding: 10px;
     margin: 10px 10vw 10px 10vw;
@@ -23,7 +23,7 @@ hr.solid {
     position: sticky;
     top: 0px;
     text-align: center;
-    background-color: pink;
+    background-color: #fcefb4;
     font-size: 1.5rem;
     margin-bottom: 5px;
     
@@ -38,7 +38,7 @@ a:hover {
     color: rgb(139, 139, 139);
 }
 .main-column {
-    background-color: pink;
+    background-color: #fcefb4;
     color: black;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
