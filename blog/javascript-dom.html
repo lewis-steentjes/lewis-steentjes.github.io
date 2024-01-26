@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>(PAGE title) </title>
+    <title>JavaScript and the DOM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Content-Security-Policy" content="default-src 'self'">
@@ -17,7 +17,7 @@
       <a>Other Empty Link</a>
     </div>
     <div class="main-column">
-    <h1>JavaScript, the DOM and How "It All Comes Together"</h1>
+    <h1 id="blog-title">JavaScript, the DOM and How "It All Comes Together"</h1>
     <p>When you're building a website, the first things you need to understand are
         HTML and CSS. Together, these tools allow you to build a "static" website, 
         a great way to display information to others. By adding JavaScript into a 
@@ -34,12 +34,87 @@
     <p>The DOM (short for Document Object Model) is what the web browser creates after 
         reading in all of the files for a website. This is hosted locally on the user's
         machine and can be directly manipulated with JavaScript "scripts", which are 
-        written in as part of the website.
+        written in as part of the website.</p>
+    <p>JavaScript code is able to modify and interact with the DOM, allowing for "smarter"
+        websites. For example, we can take the information from this text box and use it
+        to update the title for this blog post.
     </p>
-    <h3>What's so special about JavaScript?</h3>
-
-
+    <input type="text" style="max-width: 100%; width: 100%" id="example-text-box" style="padding-bottom: 10px">
+    <p></p>
+    <img src="/images/blog/JavaScript-DOM-00.png" class="blog-pic" alt>
+    <p>This is the simple JavaScript code that makes this work. In the first set of instructions, 
+        we read the title of the blog post from the DOM and write it to the text box when the page
+        first loads. Then, every time we detect that the viewer of the page lets a key on their
+        keyboard go up, we update the title to reflect what's in the text box. Simple!
+    </p>
+    <h3>What's so cool about JavaScript?</h3>
+    <p>JavaScript has a lot of different tools under it's belt that really make it shine, but here's a few:
+        <ol><li>Control Flow</li>
+        <li>Loops</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+        <li>Functions</li></ol>
+    </p>
+    <h3>Control Flow</h3>
+    <p>JavaScript code is interpreted from start to finish. Within that code, we can control
+        the flow of it, by using conditional statements like 'if' statements. These let us 
+        choose different routes through the code, depending on the variables in the environment.
+    </p> 
+    <img src="/images/blog/JavaScript-DOM01.png" class="blog-pic" alt="code block showing if else statements">
+    <p>
+        In the above image, we can see that because the 'numberOfCars' environment variable is set to 8,
+        the 'if' statement see's that 8 is more than 5 and displays the corresponding message. If 
+        we change the 'numberOfCars' environment variable to be 3, then we see the following behaviour:
+    </p>
+    <img src="/images/blog/javascript-dom02.png" class="blog-pic" alt="code block showing if else statements"></img>
+    <p>This is the essence of control flow, we are controlling the flow of the code - rather than letting
+        it be freely interpreted.
+    </p>
+    <h3>Loops</h3>
+    <p>Loops are a tool that allow us to repeat the same piece of code. The simplest form of which, is a
+        for loop. Below, we set an environment variable 'i' to start with the value of 1. Then, we perform a 
+        check to see if i has done enough cycles to stop running the code inside of the for loop. Essentially, 
+        "if 'i' is less than or equal to 5, run the following code". After running the code inside the loop, 
+        run this other little bit of code "i++", which adds one to the value of 'i'.</p>
+    <img src="/images/blog/JavaScript-DOM03.png" class="blog-pic" alt="code block showing for loop">
+    <p>Here, we can see that our environment variable 'i', starts off with a value of 1, runs the internal code, 
+        increments the value of 'i' by 1, then does it again until it's done it 5 times.
+    </p>
+    <h3>Arrays</h3>
+    <p>Arrays are a way of storing groups of information in an environment variable. For example, we could have 
+        an array of 'fruits' which contain a bunch of different fruits. From there, we can access each different 
+       fruit by using a number. Furthermore, we can add our array to our loop to iterate through it. </p>
+    <img src="/images/blog/JavaScript-DOM04.png" class="blog-pic" alt="code block showing array">
+    <p>Just taking a quick look at arrays, we can see this common use case of iterating over an array with a for 
+        loop.
+    </p>
+    <h3>Objects</h3>
+    <p>Objects are another way of storing groups of information. Instead of accessing the information with 
+        a number like we do with arrays, instead we access information in an object with a key.
+    </p>
+    <img src="/images/blog/JavaScript-DOM05.png" class="blog-pic" alt="code block for objects">
+    <p>As we can see here, a key for an object can be called either with by feeding it in with square bracket 
+        notation, surrounded by quotation marks OR by calling it with a '.' before it. We can also pass in 
+        a variable instead of the key in quotation marks when using square bracket notation. 
+        
+    </p>
+    <h3>Functions</h3>
+    <p>Functions are a way of storing code for reuse across a project. In their simplest form, they let you 
+        write one line of code to execute ten lines of code. They can also accept input variables and "return"
+        an output value. 
+    </p>
+    <img src="/images/blog/JavaScript-DOM06.png" class="blog-pic" alt="code block for functions">
+    <p>Here, we've implemented a simple math function of y=(x+1)*10. We can see that the function takes an 
+        input number, adds one to itself then multiplies itself by 10. Afterwards, it "returns" the number.
+    </p>
+    <p>Functions are helpful because they save us from writing the same pieces of code over and over. If we want 
+        to do the same thing, or a similar thing throughout our project, we can call the function instead of
+        pasting it fifty times throughout our project. Then, if we want to make a change to the behaviour of 
+        that piece of code, we only have to update the function - rather than trawling through our code to find 
+        the fifty entries that we otherwise would have pasted in. </p>
     <a class="return-link" href="/index.html">Return to Home</a>
     </div>
+    <script src="/js/blog/javascript-dom.js"></script>
   </body>
 </html>
+
