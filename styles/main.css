@@ -190,3 +190,96 @@ p.code-segment {
     font-family: 'code-classname';
     color: gray;
 }
+
+.tierlist-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #030303;
+    color: #e6e6e6;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 5px;
+    gap: 6px; /* Adjust the space between each tier */
+}
+
+.tierlist-row {
+    /*background-color: rgba(187, 18, 18, 0.96);*/
+    display: flex;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 100%;
+    max-width: 98%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tierlist-item {
+    background-color: rgb(243, 189, 12); 
+    color: black;
+    height: 200%;
+    border-radius: 12px;
+    padding: 0px 9px 0px 9px;
+}
+
+.tierlist-stier {
+    background-color: snow;
+    color:rgb(4, 4, 4);
+    width: 5%; 
+}
+
+.tierlist-atier {
+    background-color: rgb(255, 213, 0);
+    color: rgb(4, 4, 4);
+    width: 5%
+}
+
+.tierlist-btier {
+    background-color: rgb(68, 222, 68);
+    color: black;
+    width: 5%;
+}
+
+.tierlist-ctier {
+    background-color: rgb(0, 183, 183);
+    color: black;
+    width: 5%;
+}
+
+.tierlist-dtier {
+    background-color: rgb(174, 87, 255);
+    color: black;
+    width: 5%;
+}
+
+.tierlist-ftier {
+    background-color: rgb(233, 0, 0);
+    color: black;
+    width: 5%;
+}
+
+/*
+.tier-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the space between each tier 
+  }
+  
+  .tier-row {
+    display: flex;
+    gap: 10px; /* Adjust the space between items in the same tier 
+    padding: 10px;
+    border: 1px solid #ccc; /* A light border for each tier row 
+    align-items: center; /* Aligns items vertically in the center 
+    justify-content: start; /* Aligns items to the start of the row 
+  }
+  
+  /* Example colors for different tiers 
+  .tier-s { background-color: #ffcccc; }
+  .tier-a { background-color: #ffdddd; }
+  .tier-b { background-color: #ffeeee; }
+  .tier-c { background-color: #ffffcc; }
+  .tier-d { background-color: #ffffdd; }
+  */
