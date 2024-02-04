@@ -42,7 +42,7 @@ a:hover {
     color: black;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
-    width: 1100px;
+    width: 850px; /* Change to 900ish after fixing the tier list to work with it */
     justify-content: center;
     align-self: center;
     margin: 20px auto 10px auto;
